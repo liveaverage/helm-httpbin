@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: quay.io/shifti/httpbin-ubi:latest
+  repository: quay.io/shifti/httpbin-ubi
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
