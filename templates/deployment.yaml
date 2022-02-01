@@ -11,11 +11,11 @@ spec:
       {{- include "httpbin.selectorLabels" . | nindent 6 }}
   template:
     metadata:
-    {{- if .Values.sm.enabled -}}
+{{- if .Values.sm.enabled -}}
       annotations:
         sidecar.istio.io/inject: 'true'
         sidecar.istio.io/rewriteAppHTTPProbers: 'true'
-    {{- end }}
+{{- end }}
       labels:
         {{- include "httpbin.selectorLabels" . | nindent 8 }}
     spec:
