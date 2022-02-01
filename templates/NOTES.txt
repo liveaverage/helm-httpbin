@@ -1,3 +1,5 @@
+
+
 0. Create the TLS secret in the Service Mesh Control Plane project by executing:
   oc create secret tls secret-cert --cert=/home/liveaverage/.acme.sh/api.vmx.int.shifti.us/fullchain.cer --key=/home/liveaverage/.acme.sh/api.vmx.int.shifti.us/api.vmx.int.shifti.us.key -n PROJECT_SMCP
 
