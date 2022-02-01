@@ -42,7 +42,8 @@ subdomain: apps.cluster-t965b.t965b.sandbox404.opentlc.com
 # Enable or Disable service Mesh integration
 sm:
   enabled: true
-  annotations: |-
+  # Leave an empty dictionary if injection should be disabled: {}
+  annotations:
     sidecar.istio.io/inject: 'true'
     sidecar.istio.io/rewriteAppHTTPProbers: 'true'
 
