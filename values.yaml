@@ -36,6 +36,9 @@ service:
   type: ClusterIP
   port: 8888
 
+# Subdomain/Wildcard subdomain for auto route creation via SM Gateway
+subdomain: apps.cluster-t965b.t965b.sandbox404.opentlc.com
+
 # Enable or Disable service Mesh integration
 sm:
   enabled: true
