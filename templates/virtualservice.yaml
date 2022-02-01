@@ -1,0 +1,14 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: vs-httpbin
+spec:
+  gateways:
+  - {{ include "httpbin.fullname" . }}
+  hosts:
+  - {{ include "httpbin.fullname" . }}
+  - {{ include "httpbin.fullname" . }}.{{ .Values.subdomain }}
+  http:
+  - route:
+    - destination:
+        host: {{ include "httpbin.fullname" . }}
