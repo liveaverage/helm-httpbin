@@ -23,5 +23,5 @@ spec:
       protocol: HTTPS
     tls:
       credentialName: secret-cert
-      mode: ISTIO_MUTUAL
+      mode: SIMPLE
 {{- end }}
