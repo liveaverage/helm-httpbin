@@ -17,6 +17,7 @@ spec:
       httpsRedirect: true
   - hosts:
     - {{ include "httpbin.fullname" . }}.{{ .Values.subdomain }}
+    - yourapp.{{ .Values.subdomain }}
     port:
       name: https
       number: 443
