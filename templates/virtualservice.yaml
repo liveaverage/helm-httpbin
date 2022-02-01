@@ -9,6 +9,7 @@ spec:
   hosts:
   - {{ include "httpbin.fullname" . }}
   - {{ include "httpbin.fullname" . }}.{{ .Values.subdomain }}
+  - yourapp.{{ .Values.subdomain }}
   http:
   - route:
     - destination:
