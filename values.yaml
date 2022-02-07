@@ -46,6 +46,10 @@ sm:
   annotations:
     sidecar.istio.io/inject: 'true'
     sidecar.istio.io/rewriteAppHTTPProbers: 'true'
+    sidecar.istio.io/proxyCPULimit: 250m
+    sidecar.istio.io/proxyCPU: 10m
+    sidecar.istio.io/proxyMemoryLimit: 256Mi
+    sidecar.istio.io/proxyMemory: 64Mi
 
 ingress:
   enabled: false
